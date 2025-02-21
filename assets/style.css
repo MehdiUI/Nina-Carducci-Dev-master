@@ -110,7 +110,7 @@ body {
 }
 
 .nav-pills .nav-link.active-tag {
-	color: #fff;
+	color: #000;
     background-color: #BEB45A ;
 }
 
