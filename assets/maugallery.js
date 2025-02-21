@@ -37,7 +37,7 @@
         );
       }
 
-      $(this).fadeIn(500);
+      $(this).show();
     });
   };
   $.fn.mauGallery.defaults = {
@@ -192,8 +192,9 @@
           index = i;
         }
       });
-      next = imagesCollection[index] || imagesCollection[0];
-      $(".lightboxImage").attr("src", $(next).attr("src"));
+      index = (index - 1 + imagesCollection.length) % imagesCollection.length;
+$(".lightboxImage").attr("src", $(imagesCollection[index]).attr("src"));
+
     },
     createLightBox(gallery, lightboxId, navigation) {
       gallery.append(`<div class="modal fade" id="${
@@ -251,11 +252,11 @@
         if (tag === "all") {
           $(this)
             .parents(".item-column")
-            .show(300);
+            .show();
         } else if ($(this).data("gallery-tag") === tag) {
           $(this)
             .parents(".item-column")
-            .show(300);
+            .show();
         }
       });
     }
