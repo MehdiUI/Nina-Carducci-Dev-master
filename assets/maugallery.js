@@ -192,7 +192,7 @@
           index = i;
         }
       });
-      index = (index - 1 + imagesCollection.length) % imagesCollection.length;
+      index = (index + 1) % imagesCollection.length;
 $(".lightboxImage").attr("src", $(imagesCollection[index]).attr("src"));
 
     },
