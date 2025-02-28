@@ -71,6 +71,8 @@ body {
 	width: 100%;
 
 }
+
+
 #about-me {
 	flex: 2
 }
@@ -91,10 +93,10 @@ body {
 }
 
 #gallery {
-	/*	min-height: 100vh; */
+		min-height: 100vh; 
 }
 
-/* */
+
 
 .title{
 	text-align: center;
@@ -249,6 +251,7 @@ form textarea {
 	font-size: 1.2em;
 	margin-bottom: 20px;
 }
+
 input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
