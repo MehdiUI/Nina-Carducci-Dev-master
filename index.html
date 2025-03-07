@@ -3,7 +3,8 @@
 <head>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" >
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" media="print" onload="this.onload=null;this.media='all'">
+
 	<link rel="stylesheet" href="assets/style.css" >
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,10 +15,13 @@
     imagesizes="(max-width: 640px) 100vw, 
            (max-width: 1280px) 80vw, 
            60vw">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" >
+		   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		   <noscript>
+			 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:wght@400;700&display=swap">
+		   </noscript>
 	<meta charset="UTF-8">
 	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 	<script src="./assets/maugallery.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
 	<title>Nina Carducci | Photographe professionnelle à Bordeaux - Mariage, Portrait, Événementiel</title>
@@ -49,7 +53,7 @@
 			<li><a href="#gallery">Galerie</a></li>
 			<li><a href="#services">Service</a></li>
 			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="logo instagram"></a></li>
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="logo instagram" loading="lazy"></a></li>
 		</ul>
 	</div>
 </div>
@@ -65,9 +69,9 @@
 			<div class="carousel-item active">
 
 				<picture>
-					<source srcset="./assets/images/slider/ryoji-iwata-MOBILEwUZjnOv7t0g-unsplash.avif" media="(max-width: 640px)" >
-					<source srcset="./assets/images/slider/ryoji-iwata-TABLETTEwUZjnOv7t0g-unsplash.avif" media="(max-width: 1280px)" >
-					<source srcset="./assets/images/slider/ryoji-iwata-DESKTOPwUZjnOv7t0g-unsplash.avif" media="(min-width: 1281px)" >
+					<source srcset="./assets/images/slider/ryoji-iwata-MOBILEwUZjnOv7t0g-unsplash.avif" media="(max-width: 640px)" loading="lazy">
+					<source srcset="./assets/images/slider/ryoji-iwata-TABLETTEwUZjnOv7t0g-unsplash.avif" media="(max-width: 1280px)" loading="lazy">
+					<source srcset="./assets/images/slider/ryoji-iwata-DESKTOPwUZjnOv7t0g-unsplash.avif" media="(min-width: 1281px)" loading="lazy">
 			
 				
 					<img src="./assets/images/slider/ryoji-iwata-DESKTOPwUZjnOv7t0g-unsplash.avif" class="d-block w-100" alt="Homme en costume traversant le célèbre passage piéton de Shibuya à Tokyo, Japon, tenant une mallette noire" >
@@ -77,9 +81,9 @@
 			
 			<div class="carousel-item">
 				<picture>
-					<source srcset="./assets/images/slider/nicholas-green-MOBILEnPz8akkUmDI-unsplash_1.avif" media="(max-width: 640px)" >
-					<source srcset="./assets/images/slider/nicholas-green-TABLETTEnPz8akkUmDI-unsplash_1.avif" media="(max-width: 1280px)" >
-					<source srcset="./assets/images/slider/nicholas-green-DESKTOPnPz8akkUmDI-unsplash_2.avif" media="(min-width: 1281px)" >
+					<source srcset="./assets/images/slider/nicholas-green-MOBILEnPz8akkUmDI-unsplash_1.avif" media="(max-width: 640px)" loading="lazy">
+					<source srcset="./assets/images/slider/nicholas-green-TABLETTEnPz8akkUmDI-unsplash_1.avif" media="(max-width: 1280px)" loading="lazy">
+					<source srcset="./assets/images/slider/nicholas-green-DESKTOPnPz8akkUmDI-unsplash_2.avif" media="(min-width: 1281px)" loading="lazy">
 			
 					
 					<img src="./assets/images/slider/nicholas-green-DESKTOPnPz8akkUmDI-unsplash_2.avif" class="d-block w-100" alt="Foule enthousiaste à un concert, des spectateurs levant les bras et souriant, ambiance festive et énergique" >
@@ -89,9 +93,9 @@
 			
 			<div class="carousel-item">
 				<picture>
-					<source srcset="./assets/images/slider/edward-cisneros-3_MOBILEh6-1NPDGw-unsplash_2.avif" media="(max-width: 640px)" >
-					<source srcset="./assets/images/slider/edward-cisneros-3_TABLETTEh6-1NPDGw-unsplash.avif" media="(max-width: 1280px)" >
-					<source srcset="./assets/images/slider/edward-cisneros-DESKTOP3_h6-1NPDGw-unsplash_2.avif" media="(min-width: 1281px)" >
+					<source srcset="./assets/images/slider/edward-cisneros-3_MOBILEh6-1NPDGw-unsplash_2.avif" media="(max-width: 640px)" loading="lazy">
+					<source srcset="./assets/images/slider/edward-cisneros-3_TABLETTEh6-1NPDGw-unsplash.avif" media="(max-width: 1280px)" loading="lazy">
+					<source srcset="./assets/images/slider/edward-cisneros-DESKTOP3_h6-1NPDGw-unsplash_2.avif" media="(min-width: 1281px)" loading="lazy">
 
 					<img src="./assets/images/slider/edward-cisneros-MOBILEh6-1NPDGw-unsplash_2.avif"  class="d-block w-100" alt="Mariés partageant un baiser romantique lors de leur sortie de mariage, entourés d’invités brandissant des cierges magiques, ambiance féérique et festive" >
 				</picture>
@@ -209,7 +213,7 @@
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.avif" alt="Appareil photo Leica vintage en gros plan, éclairé par une lumière chaude et tamisée, capturant une ambiance rétro et élégante">
+			<img src="./assets/images/camera.avif" alt="Appareil photo Leica vintage en gros plan, éclairé par une lumière chaude et tamisée, capturant une ambiance rétro et élégante" loading="lazy">
 		</div>
 	</div>
 </div>
