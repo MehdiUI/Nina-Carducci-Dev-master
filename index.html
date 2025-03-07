@@ -58,31 +58,46 @@
 			<div class="carousel-item active">
 			
 				
-				<img 
-    src="./assets/images/slider/ryoji-iwata-DESKTOPwUZjnOv7t0g-unsplash.avif"
-    srcset="
-        ./assets/images/slider/ryoji-iwata-MOBILEwUZjnOv7t0g-unsplash.avif 640w, 
-        ./assets/images/slider/ryoji-iwata-TABLETTEwUZjnOv7t0g-unsplash.avif 1280w, 
-        ./assets/images/slider/ryoji-iwata-DESKTOPwUZjnOv7t0g-unsplash.avif 1920w"
-    sizes="(max-width: 640px) 100vw, 
-           (max-width: 1280px) 80vw, 
-           60vw"
-    class="d-block w-100" 
-    alt="Homme en costume traversant le célèbre passage piéton de Shibuya à Tokyo"
-    fetchpriority="high">
+				<picture>
+					<source srcset="./assets/images/slider/ryoji-iwata-MOBILEwUZjnOv7t0g-unsplash.avif" media="(max-width: 640px)">
+					<source srcset="./assets/images/slider/ryoji-iwata-TABLETTEwUZjnOv7t0g-unsplash.avif" media="(max-width: 1280px)">
+					<source srcset="./assets/images/slider/ryoji-iwata-DESKTOPwUZjnOv7t0g-unsplash.avif" media="(min-width: 1281px)">
+					<img 
+						src="./assets/images/slider/ryoji-iwata-DESKTOPwUZjnOv7t0g-unsplash.avif" 
+						class="d-block w-100" 
+						alt="Homme en costume traversant le célèbre passage piéton de Shibuya à Tokyo" 
+						fetchpriority="high">
+				</picture>
+				
+
+		
+			<div class="carousel-item">
+				<picture>
+					<source srcset="./assets/images/slider/nicholas-green-MOBILEnPz8akkUmDI-unsplash_1.avif" media="(max-width: 640px)">
+					<source srcset="./assets/images/slider/nicholas-green-TABLETTEPnPz8akkUmDI-unsplash_1.avif" media="(max-width: 1280px)">
+					<source srcset="./assets/images/slider/nicholas-green-DESKTOPPnPz8akkUmDI-unsplash_2.avif" media="(min-width: 1281px)">
+					<img 
+						src="./assets/images/slider/nicholas-green-DESKTOPPnPz8akkUmDI-unsplash_2.avif" 
+						class="d-block w-100" 
+						alt="Foule en liesse levant les bras et criant de joie lors d'un concert">
+				</picture>
+					
+					<!-- <img src="./assets/images/slider/nicholas-green-DESKTOPnPz8akkUmDI-unsplash_2.avif" class="d-block w-100" alt="Foule enthousiaste à un concert, des spectateurs levant les bras et souriant, ambiance festive et énergique" > -->
+			
 			</div>
 		
 			<div class="carousel-item">
 			
-					
-					<img src="./assets/images/slider/nicholas-green-DESKTOPnPz8akkUmDI-unsplash_2.avif" class="d-block w-100" alt="Foule enthousiaste à un concert, des spectateurs levant les bras et souriant, ambiance festive et énergique" >
-			
-			</div>
-		
-			<div class="carousel-item">
-			
-					
-					<img src="./assets/images/slider/edward-cisneros-DEKSTOP3_h6-1NPDGw-unsplash_2.avif" class="d-block w-100" alt="Mariés partageant un baiser romantique lors de leur sortie de mariage, entourés d’invités brandissant des cierges magiques, ambiance féérique et festive" >
+				<picture>
+					<source srcset="./assets/images/slider/edward-cisneros-3_MOBILEh6-1NPDGw-unsplash_2.avif" media="(max-width: 640px)">
+					<source srcset="./assets/images/slider/edward-cisneros-3_TABLETTEh6-1NPDGw-unsplash_h.avif" media="(max-width: 1280px)">
+					<source srcset="./assets/images/slider/edward-cisneros-DESKTOP3_h6-1NPDGw-unsplash_2.avif" media="(min-width: 1281px)">
+					<img 
+						src="./assets/images/slider/edward-cisneros-DESKTOP3_h6-1NPDGw-unsplash_2.avif" 
+						class="d-block w-100" 
+						alt="Scène de mariage avec des invités célébrant sous un éclairage chaleureux">
+				</picture>
+					<!-- <img src="./assets/images/slider/edward-cisneros-DEKSTOP3_h6-1NPDGw-unsplash_2.avif" class="d-block w-100" alt="Mariés partageant un baiser romantique lors de leur sortie de mariage, entourés d’invités brandissant des cierges magiques, ambiance féérique et festive" > -->
 			
 			</div>
 		</div>
