@@ -3,21 +3,14 @@
 <head>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preload" href="./assets/bootstrap/bootstrap.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" media="print" onload="this.media='all'">
+
 	<link rel="stylesheet" href="assets/style.css" >
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:wght@400;700&display=swap">
-	</noscript>
+
 	<meta charset="UTF-8">
-
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" async></script>
-	<script src="./assets/bootstrap/bootstrap.bundle.js" async></script>
-	<script src="./assets/maugallery.js" async></script>
-	<script src="./assets/scripts.js" async></script>
-
 	<title>Nina Carducci | Photographe professionnelle à Bordeaux - Mariage, Portrait, Événementiel</title>
 
 	 <meta name="description" content="Nina Carducci, photographe spécialisée en mariages, portraits et événements. Capturez vos plus beaux moments avec une approche artistique et authentique.">
@@ -87,8 +80,8 @@
 			<div class="carousel-item">
 				<picture>
 					<source srcset="./assets/images/slider/edward-cisneros-3_MOBILEh6-1NPDGw-unsplash_2.avif" media="(max-width: 640px)">
-					<source srcset="./assets/images/slider/edward-cisneros-3_TABLETTEh6-1NPDGw-unsplash.avif" media="(max-width: 1024px)">
-					<source srcset="./assets/images/slider/edward-cisneros-DESKTOP3_h6-1NPDGw-unsplash_2.avif" media="(min-width: 1025px)">
+					<source srcset="./assets/images/slider/edward-cisneros-3_TABLETTEh6-1NPDGw-unsplash.avif" media="(max-width: 1280px)">
+					<source srcset="./assets/images/slider/edward-cisneros-DESKTOP3_h6-1NPDGw-unsplash_2.avif" media="(min-width: 1281px)">
 					<img src="./assets/images/slider/edward-cisneros-MOBILEh6-1NPDGw-unsplash_2.avif"
 						 class="d-block w-100"
 						 alt="Mariés partageant un baiser romantique lors de leur sortie de mariage, entourés d’invités brandissant des cierges magiques, ambiance féérique et festive" 
@@ -250,6 +243,9 @@
 		
 	}
 	 </script>
-	
+	 <script src="https://code.jquery.com/jquery-3.4.1.min.js" async defer></script>
+	 <script src="./assets/bootstrap/bootstrap.bundle.js" async defer></script>
+	 <script src="./assets/maugallery.js" async defer></script>
+	 <script src="./assets/scripts.js" async defer></script>
 </body>
 </html>
